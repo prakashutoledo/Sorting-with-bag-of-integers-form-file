@@ -6,7 +6,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Bag {
-
+    //Created bag of integers from file
     public int size;
     public final int[] intBag;
     public int count = 0;
@@ -32,6 +32,7 @@ public class Bag {
         this.size = size;
     }
 
+    // Add method for adding integers
     public void addInteger(int number) {
         if (count == size) {
             System.out.println("Bag is full.");
@@ -41,6 +42,7 @@ public class Bag {
         }
     }
 
+    // Method to print bag in file
     public void printToFile(String File) {
         try {
             PrintStream p;
