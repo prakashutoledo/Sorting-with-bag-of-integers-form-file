@@ -2,8 +2,9 @@ package sorting;
 
 import java.util.Arrays;
 public class InsertionSort {
-
+    //Getting total number of comparison while sorting
     int comparison;
+    //Calculating total time take to sort integers through a bag of integers from file
     long startTime, endTime, elapsedTime;
 
     public void sort(int[] arrayInteger) {
@@ -24,7 +25,7 @@ public class InsertionSort {
         endTime = System.currentTimeMillis();
         elapsedTime = endTime - startTime;
     }
-
+    //Display a array into nicely formatted string   
     public void display(int[] arr) {
         int[] newArr = new int[30];
         System.arraycopy(arr, 0, newArr, 0, newArr.length);
