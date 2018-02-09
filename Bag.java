@@ -9,29 +9,20 @@ public class Bag {
     //Created bag of integers from file
     public int size;
     public final int[] intBag;
-    public int count = 0;
+    public int count;
 
     public Bag(int number) {
         size = number;
         intBag = new int[size];
+        count = 0;
     }
-
+    
     public int getCount() {
         return count;
     }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
-
-    public int getSize() {
+    public int getSize() { 
         return size;
     }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
-
     // Add method for adding integers
     public void addInteger(int number) {
         if (count == size) {
@@ -54,5 +45,4 @@ public class Bag {
             Logger.getLogger(Sorting.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
 }
